@@ -60,7 +60,12 @@
         </developer>
     </developers>
 
+    <prerequisites>
+      <maven>${maven.version}</maven>
+    </prerequisites>
+
     <properties>
+        <datetime>${timestamp}</datetime>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- GPG key ID we sign the builds with. This can be overridden by other developers -->
         <gpg.keyname>AC874D11CBCACFA9</gpg.keyname>
@@ -71,8 +76,8 @@
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.test.target>1.6</maven.compiler.test.target>
         <maven.compiler.test.source>1.6</maven.compiler.test.source>
-
-        <datetime>${timestamp}</datetime>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+	      <maven.version>3.6.3</maven.version>
 
         <version.slf4j>1.7.14</version.slf4j>
     </properties>
